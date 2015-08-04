@@ -140,11 +140,6 @@ ul, ol, div, p {
 	line-height: 1em;
 }
 
-.reveal img.stretch {
-  max-height: 550px;
-  max-width:900px;
-}
-
 /* Slide backgrounds are placed inside of their slide when exporting to PDF */
 .reveal section .slide-background {
 	display: block !important;
