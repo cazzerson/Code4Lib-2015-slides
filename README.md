@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-View slides at [cazzerson.github.io/Code4Lib-2015-slides](http://cazzerson.github.io/Code4Lib-2015-slides)
-=======
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
@@ -1019,4 +1016,3 @@ Some reveal.js features, like external Markdown and speaker notes, require that 
 MIT licensed
 
 Copyright (C) 2015 Hakim El Hattab, http://hakim.se
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab

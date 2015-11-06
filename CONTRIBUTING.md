@@ -17,10 +17,7 @@ When reporting a bug make sure to include information about which browser and op
   - Single-quoted strings
 - Should be made towards the **dev branch**
 - Should be submitted from a feature/topic branch (not your master)
-<<<<<<< HEAD
-=======
 
 
 ### Plugins
 Please do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab

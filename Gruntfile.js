@@ -1,11 +1,8 @@
 /* global module:false */
 module.exports = function(grunt) {
 	var port = grunt.option('port') || 8000;
-<<<<<<< HEAD
-=======
 	var base = grunt.option('base') || '.';
 
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	// Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -41,21 +38,6 @@ module.exports = function(grunt) {
 				}
 			},
 			themes: {
-<<<<<<< HEAD
-				files: {
-					'css/theme/black.css': 'css/theme/source/black.scss',
-					'css/theme/white.css': 'css/theme/source/white.scss',
-					'css/theme/league.css': 'css/theme/source/league.scss',
-					'css/theme/beige.css': 'css/theme/source/beige.scss',
-					'css/theme/night.css': 'css/theme/source/night.scss',
-					'css/theme/serif.css': 'css/theme/source/serif.scss',
-					'css/theme/simple.css': 'css/theme/source/simple.scss',
-					'css/theme/sky.css': 'css/theme/source/sky.scss',
-					'css/theme/moon.css': 'css/theme/source/moon.scss',
-					'css/theme/solarized.css': 'css/theme/source/solarized.scss',
-					'css/theme/blood.css': 'css/theme/source/blood.scss'
-				}
-=======
 				files: [
 					{
 						expand: true,
@@ -65,7 +47,6 @@ module.exports = function(grunt) {
 						ext: '.css'
 					}
 				]
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 			}
 		},
 
@@ -112,15 +93,9 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					port: port,
-<<<<<<< HEAD
-					base: '.',
-                    livereload: true,
-                    open: true
-=======
 					base: base,
 					livereload: true,
 					open: true
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 				}
 			}
 		},
@@ -132,25 +107,15 @@ module.exports = function(grunt) {
 				'js/**',
 				'lib/**',
 				'images/**',
-<<<<<<< HEAD
-				'plugin/**'
-=======
 				'plugin/**',
 				'**.md'
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 			]
 		},
 
 		watch: {
-<<<<<<< HEAD
-            options: {
-                livereload: true
-            },
-=======
 			options: {
 				livereload: true
 			},
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 			js: {
 				files: [ 'Gruntfile.js', 'js/reveal.js' ],
 				tasks: 'js'
@@ -163,18 +128,12 @@ module.exports = function(grunt) {
 				files: [ 'css/reveal.scss' ],
 				tasks: 'css-core'
 			},
-<<<<<<< HEAD
-            html: {
-                files: [ 'index.html']
-            }
-=======
 			html: {
 				files: [ 'index.html']
 			},
 			markdown: {
 				files: [ './*.md' ]
 			}
->>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 		}
 
 	});
