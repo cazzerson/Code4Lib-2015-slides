@@ -57,6 +57,7 @@ body {
 	color: #000;
 }
 
+<<<<<<< HEAD
 ::-moz-selection {
 	background: #FF5E99;
 	color: #fff;
@@ -67,6 +68,15 @@ body {
 	background: #FF5E99;
 	color: #fff;
 	text-shadow: none;
+=======
+// Ensures that the main background color matches the
+// theme in fullscreen mode
+html:-webkit-full-screen-ancestor {
+	background-color: inherit;
+}
+html:-moz-full-screen-ancestor {
+	background-color: inherit;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 }
 
 
@@ -107,6 +117,7 @@ body {
 	transform: scale( 0.1 );
 
 	&.visible {
+<<<<<<< HEAD
 		transform: scale( 1 );
 	}
 }
@@ -116,6 +127,9 @@ body {
 
 	&.visible {
 		transform: rotateX( 0 );
+=======
+		transform: none;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	}
 }
 
@@ -141,6 +155,10 @@ body {
 
 .reveal .slides section .fragment.strike {
 	opacity: 1;
+<<<<<<< HEAD
+=======
+	visibility: visible;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 
 	&.visible {
 		text-decoration: line-through;
@@ -234,11 +252,17 @@ body {
 	-webkit-user-select: none;
 }
 
+<<<<<<< HEAD
 .reveal .controls div {
+=======
+.reveal .controls button {
+	padding: 0;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	position: absolute;
 	opacity: 0.05;
 	width: 0;
 	height: 0;
+<<<<<<< HEAD
 	border: 12px solid transparent;
 	transform: scale(.9999);
 	transition: all 0.2s ease;
@@ -247,53 +271,100 @@ body {
 }
 
 .reveal .controls div.enabled {
+=======
+	background-color: transparent;
+	border: 12px solid transparent;
+	transform: scale(.9999);
+	transition: all 0.2s ease;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+}
+
+.reveal .controls .enabled {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	opacity: 0.7;
 	cursor: pointer;
 }
 
+<<<<<<< HEAD
 .reveal .controls div.enabled:active {
 	margin-top: 1px;
 }
 
 	.reveal .controls div.navigate-left {
+=======
+.reveal .controls .enabled:active {
+	margin-top: 1px;
+}
+
+	.reveal .controls .navigate-left {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 		top: 42px;
 
 		border-right-width: 22px;
 		border-right-color: #000;
 	}
+<<<<<<< HEAD
 		.reveal .controls div.navigate-left.fragmented {
 			opacity: 0.3;
 		}
 
 	.reveal .controls div.navigate-right {
+=======
+		.reveal .controls .navigate-left.fragmented {
+			opacity: 0.3;
+		}
+
+	.reveal .controls .navigate-right {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 		left: 74px;
 		top: 42px;
 
 		border-left-width: 22px;
 		border-left-color: #000;
 	}
+<<<<<<< HEAD
 		.reveal .controls div.navigate-right.fragmented {
 			opacity: 0.3;
 		}
 
 	.reveal .controls div.navigate-up {
+=======
+		.reveal .controls .navigate-right.fragmented {
+			opacity: 0.3;
+		}
+
+	.reveal .controls .navigate-up {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 		left: 42px;
 
 		border-bottom-width: 22px;
 		border-bottom-color: #000;
 	}
+<<<<<<< HEAD
 		.reveal .controls div.navigate-up.fragmented {
 			opacity: 0.3;
 		}
 
 	.reveal .controls div.navigate-down {
+=======
+		.reveal .controls .navigate-up.fragmented {
+			opacity: 0.3;
+		}
+
+	.reveal .controls .navigate-down {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 		left: 42px;
 		top: 74px;
 
 		border-top-width: 22px;
 		border-top-color: #000;
 	}
+<<<<<<< HEAD
 		.reveal .controls div.navigate-down.fragmented {
+=======
+		.reveal .controls .navigate-down.fragmented {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 			opacity: 0.3;
 		}
 
@@ -337,11 +408,26 @@ body {
 .reveal .slide-number {
 	position: fixed;
 	display: block;
+<<<<<<< HEAD
 	right: 15px;
 	bottom: 15px;
 	opacity: 0.5;
 	z-index: 31;
 	font-size: 12px;
+=======
+	right: 8px;
+	bottom: 8px;
+	opacity: 0.5;
+	z-index: 31;
+	font-size: 12px;
+	color: #fff;
+	background-color: rgba( 0, 0, 0, 0.6 );
+	padding: 5px;
+}
+
+.reveal .slide-number-delimiter {
+	margin: 0 4px;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 }
 
 /*********************************************
@@ -352,6 +438,10 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
+<<<<<<< HEAD
+=======
+	overflow: hidden;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	touch-action: none;
 }
 
@@ -447,6 +537,7 @@ body {
 
 
 /*********************************************
+<<<<<<< HEAD
  * SLIDE TRANSITION
  * Aliased 'linear' for backwards compatibility
  *********************************************/
@@ -482,12 +573,76 @@ body {
 	transform: translate(0, 150%);
 }
 
+=======
+ * Mixins for readability of transitions
+ *********************************************/
+
+@mixin transition-global($style) {
+	.reveal .slides section[data-transition=#{$style}],
+	.reveal.#{$style} .slides section:not([data-transition]) {
+		@content;
+	}
+}
+@mixin transition-horizontal-past($style) {
+	.reveal .slides>section[data-transition=#{$style}].past,
+	.reveal .slides>section[data-transition~=#{$style}-out].past,
+	.reveal.#{$style} .slides>section:not([data-transition]).past {
+		@content;
+	}
+}
+@mixin transition-horizontal-future($style) {
+	.reveal .slides>section[data-transition=#{$style}].future,
+	.reveal .slides>section[data-transition~=#{$style}-in].future,
+	.reveal.#{$style} .slides>section:not([data-transition]).future {
+		@content;
+	}
+}
+
+@mixin transition-vertical-past($style) {
+	.reveal .slides>section>section[data-transition=#{$style}].past,
+	.reveal .slides>section>section[data-transition~=#{$style}-out].past,
+	.reveal.#{$style} .slides>section>section:not([data-transition]).past {
+		@content;
+	}
+}
+@mixin transition-vertical-future($style) {
+	.reveal .slides>section>section[data-transition=#{$style}].future,
+	.reveal .slides>section>section[data-transition~=#{$style}-in].future,
+	.reveal.#{$style} .slides>section>section:not([data-transition]).future {
+		@content;
+	}
+}
+
+/*********************************************
+ * SLIDE TRANSITION
+ * Aliased 'linear' for backwards compatibility
+ *********************************************/
+
+@each $stylename in slide, linear {
+	.reveal.#{$stylename} section {
+		backface-visibility: hidden;
+	}
+	@include transition-horizontal-past(#{$stylename}) {
+		transform: translate(-150%, 0);
+	}
+	@include transition-horizontal-future(#{$stylename}) {
+		transform: translate(150%, 0);
+	}
+	@include transition-vertical-past(#{$stylename}) {
+		transform: translate(0, -150%);
+	}
+	@include transition-vertical-future(#{$stylename}) {
+		transform: translate(0, 150%);
+	}
+}
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 
 /*********************************************
  * CONVEX TRANSITION
  * Aliased 'default' for backwards compatibility
  *********************************************/
 
+<<<<<<< HEAD
 .reveal .slides>section[data-transition=default].past,
 .reveal.default .slides>section:not([data-transition]).past,
 .reveal .slides>section[data-transition=convex].past,
@@ -515,10 +670,28 @@ body {
 }
 
 
+=======
+@each $stylename in default, convex {
+	@include transition-horizontal-past(#{$stylename}) {
+		transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
+	}
+	@include transition-horizontal-future(#{$stylename}) {
+		transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
+	}
+	@include transition-vertical-past(#{$stylename}) {
+		transform: translate3d(0, -300px, 0) rotateX(70deg) translate3d(0, -300px, 0);
+	}
+	@include transition-vertical-future(#{$stylename}) {
+		transform: translate3d(0, 300px, 0) rotateX(-70deg) translate3d(0, 300px, 0);
+	}
+}
+
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 /*********************************************
  * CONCAVE TRANSITION
  *********************************************/
 
+<<<<<<< HEAD
 .reveal .slides>section[data-transition=concave].past,
 .reveal.concave .slides>section:not([data-transition]).past {
 	transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0);
@@ -534,6 +707,18 @@ body {
 }
 .reveal .slides>section>section[data-transition=concave].future,
 .reveal.concave .slides>section>section:not([data-transition]).future {
+=======
+@include transition-horizontal-past(concave) {
+	transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0);
+}
+@include transition-horizontal-future(concave) {
+	transform: translate3d(100%, 0, 0) rotateY(-90deg) translate3d(100%, 0, 0);
+}
+@include transition-vertical-past(concave) {
+	transform: translate3d(0, -80%, 0) rotateX(-70deg) translate3d(0, -80%, 0);
+}
+@include transition-vertical-future(concave) {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	transform: translate3d(0, 80%, 0) rotateX(70deg) translate3d(0, 80%, 0);
 }
 
@@ -542,6 +727,7 @@ body {
  * ZOOM TRANSITION
  *********************************************/
 
+<<<<<<< HEAD
 .reveal .slides>section[data-transition=zoom],
 .reveal.zoom .slides>section:not([data-transition]) {
 	transition-timing-function: ease;
@@ -564,6 +750,23 @@ body {
 }
 .reveal .slides>section>section[data-transition=zoom].future,
 .reveal.zoom .slides>section>section:not([data-transition]).future {
+=======
+@include transition-global(zoom) {
+	transition-timing-function: ease;
+}
+@include transition-horizontal-past(zoom) {
+	visibility: hidden;
+	transform: scale(16);
+}
+@include transition-horizontal-future(zoom) {
+	visibility: hidden;
+	transform: scale(0.2);
+}
+@include transition-vertical-past(zoom) {
+	transform: translate(0, -150%);
+}
+@include transition-vertical-future(zoom) {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	transform: translate(0, 150%);
 }
 
@@ -732,14 +935,19 @@ body {
  * NO TRANSITION
  *********************************************/
 
+<<<<<<< HEAD
 .reveal .slides section[data-transition=none],
 .reveal.none .slides section:not([data-transition]) {
+=======
+@include transition-global(none) {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	transform: none;
 	transition: none;
 }
 
 
 /*********************************************
+<<<<<<< HEAD
  * OVERVIEW
  *********************************************/
 
@@ -787,6 +995,8 @@ body {
 
 
 /*********************************************
+=======
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
  * PAUSED MODE
  *********************************************/
 
@@ -857,7 +1067,11 @@ body {
  * PER-SLIDE BACKGROUNDS
  *********************************************/
 
+<<<<<<< HEAD
 .reveal>.backgrounds {
+=======
+.reveal .backgrounds {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1027,6 +1241,77 @@ body {
 
 
 /*********************************************
+<<<<<<< HEAD
+=======
+ * OVERVIEW
+ *********************************************/
+
+.reveal.overview {
+	perspective-origin: 50% 50%;
+	perspective: 700px;
+
+	.slides section {
+		height: 700px;
+		opacity: 1 !important;
+		overflow: hidden;
+		visibility: visible !important;
+		cursor: pointer;
+		box-sizing: border-box;
+	}
+	.slides section:hover,
+	.slides section.present {
+		outline: 10px solid rgba(150,150,150,0.4);
+		outline-offset: 10px;
+	}
+	.slides section .fragment {
+		opacity: 1;
+		transition: none;
+	}
+	.slides section:after,
+	.slides section:before {
+		display: none !important;
+	}
+	.slides>section.stack {
+		padding: 0;
+		top: 0 !important;
+		background: none;
+		outline: none;
+		overflow: visible;
+	}
+
+	.backgrounds {
+		perspective: inherit;
+	}
+
+	.backgrounds .slide-background {
+		opacity: 1;
+		visibility: visible;
+
+		// This can't be applied to the slide itself in Safari
+		outline: 10px solid rgba(150,150,150,0.1);
+		outline-offset: 10px;
+	}
+}
+
+// Disable transitions transitions while we're activating
+// or deactivating the overview mode.
+.reveal.overview .slides section,
+.reveal.overview-deactivating .slides section {
+	transition: none;
+}
+
+.reveal.overview .backgrounds .slide-background,
+.reveal.overview-deactivating .backgrounds .slide-background {
+	transition: none;
+}
+
+.reveal.overview-animated .slides {
+	transition: transform 0.4s ease;
+}
+
+
+/*********************************************
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
  * RTL SUPPORT
  *********************************************/
 
@@ -1223,7 +1508,11 @@ body {
 .reveal .playback {
 	position: fixed;
 	left: 15px;
+<<<<<<< HEAD
 	bottom: 15px;
+=======
+	bottom: 20px;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	z-index: 30;
 	cursor: pointer;
 	transition: all 400ms ease;
@@ -1285,10 +1574,56 @@ body {
  * SPEAKER NOTES
  *********************************************/
 
+<<<<<<< HEAD
+=======
+// Hide on-page notes
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 .reveal aside.notes {
 	display: none;
 }
 
+<<<<<<< HEAD
+=======
+// An interface element that can optionally be used to show the
+// speaker notes to all viewers, on top of the presentation
+.reveal .speaker-notes {
+	display: none;
+	position: absolute;
+	width: 70%;
+	max-height: 15%;
+	left: 15%;
+	bottom: 26px;
+	padding: 10px;
+	z-index: 1;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	overflow: auto;
+	box-sizing: border-box;
+	text-align: left;
+	font-family: Helvetica, sans-serif;
+	-webkit-overflow-scrolling: touch;
+}
+
+.reveal .speaker-notes.visible:not(:empty) {
+	display: block;
+}
+
+@media screen and (max-width: 1024px) {
+	.reveal .speaker-notes {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.reveal .speaker-notes {
+		width: 90%;
+		left: 5%;
+	}
+}
+
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 
 /*********************************************
  * ZOOM PLUGIN

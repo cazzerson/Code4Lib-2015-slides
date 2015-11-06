@@ -24,6 +24,11 @@ $blood: #a23;
 $coal: #222;
 $codeBackground: #23241f;
 
+<<<<<<< HEAD
+=======
+$backgroundColor: $coal;
+
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 // Main text
 $mainFont: Ubuntu, 'sans-serif';
 $mainFontSize: 36px;
@@ -45,10 +50,13 @@ $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $blood;
 $selectionColor: #fff;
 
+<<<<<<< HEAD
 // Background generator
 @mixin bodyBackground() {
     @include radial-gradient( $coal, lighten( $coal, 25% ) );
 }
+=======
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 
 // Theme template ------------------------------
 @import "../template/theme";
@@ -61,7 +69,11 @@ $selectionColor: #fff;
     text-shadow: 1px 1px $coal;
 }
 
+<<<<<<< HEAD
 .reveal h1, 
+=======
+.reveal h1,
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 .reveal h2,
 .reveal h3,
 .reveal h4,
@@ -70,6 +82,7 @@ $selectionColor: #fff;
     font-weight: 700;
 }
 
+<<<<<<< HEAD
 .reveal a,
 .reveal a:hover {
     text-shadow: 2px 2px 2px #000;
@@ -80,6 +93,8 @@ $selectionColor: #fff;
     text-shadow: 1px 1px 1px #000;
 }
 
+=======
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 .reveal p code {
     background-color: $codeBackground;
     display: inline-block;

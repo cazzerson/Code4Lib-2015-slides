@@ -178,8 +178,11 @@ body {
 	overflow: auto;
 	max-height: 400px;
 	word-wrap: normal;
+<<<<<<< HEAD
 	background: #3F3F3F;
 	color: #DCDCDC;
+=======
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 }
 
 .reveal table {
@@ -199,8 +202,23 @@ body {
 	border-bottom: 1px solid;
 }
 
+<<<<<<< HEAD
 .reveal table tr:last-child td {
     border-bottom: none;
+=======
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+	text-align: center;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+	text-align: right;
+}
+
+.reveal table tr:last-child td {
+	border-bottom: none;
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 }
 
 .reveal sup {
@@ -259,6 +277,14 @@ body {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
+<<<<<<< HEAD
+=======
+	.reveal section img.plain {
+		border: 0;
+		box-shadow: none;
+	}
+
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	.reveal a img {
 		-webkit-transition: all .15s linear;
 		   -moz-transition: all .15s linear;
@@ -277,6 +303,7 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 
+<<<<<<< HEAD
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
 	border-right-color: $linkColor;
@@ -310,6 +337,41 @@ body {
 }
 
 .reveal .controls div.navigate-down.enabled:hover {
+=======
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+	border-right-color: $linkColor;
+}
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+	border-left-color: $linkColor;
+}
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+	border-bottom-color: $linkColor;
+}
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+	border-top-color: $linkColor;
+}
+
+.reveal .controls .navigate-left.enabled:hover {
+	border-right-color: $linkColorHover;
+}
+
+.reveal .controls .navigate-right.enabled:hover {
+	border-left-color: $linkColorHover;
+}
+
+.reveal .controls .navigate-up.enabled:hover {
+	border-bottom-color: $linkColorHover;
+}
+
+.reveal .controls .navigate-down.enabled:hover {
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 	border-top-color: $linkColorHover;
 }
 
@@ -329,6 +391,7 @@ body {
 		        transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 	}
 
+<<<<<<< HEAD
 /*********************************************
  * SLIDE NUMBER
  *********************************************/
@@ -336,4 +399,6 @@ body {
   color: $linkColor;
 }
 
+=======
+>>>>>>> 9b5e16055a916bfc4165b5808faeea4e30ddccab
 
